@@ -1,0 +1,14 @@
+[
+    {
+        "label": "C/C++: g++ build active file",
+        "command": "/usr/bin/g++",
+        "args": [
+            "-fdiagnostics-color=always",
+            "-g",
+            "$ZED_FILE",
+            "-o",
+            "$ZED_DIRNAME/$ZED_STEM",
+        ],
+        "cwd": "$ZED_DIRNAME",
+    },
+]

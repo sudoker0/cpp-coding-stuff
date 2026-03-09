@@ -2,7 +2,20 @@ import glob
 import os
 
 files = glob.glob("**/*", recursive=True)
-excluded = (".cpp", ".inp", ".py", ".png", ".pdf", ".jpg", ".jpeg", ".png", ".txt")
+excluded = (
+    ".cpp",
+    ".inp",
+    ".py",
+    ".png",
+    ".pdf",
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".txt",
+    ".docx",
+    ".xlsx",
+    ".csv",
+)
 files = [f for f in files if os.path.isfile(f) and not f.lower().endswith(excluded)]
 
 print(f"the following files will be deleted: {files}")
